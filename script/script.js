@@ -1,7 +1,4 @@
-function mouselog(event) {
-	let zone2 = document.getElementById('zone2');
-	let zone3 = document.getElementById('zone3');
-	let zone4 = document.getElementById('zone4');
+function mouselog(event, id) {
 	if (event.type == 'mouseover') {
 		document.getElementById('zone1').style.width = '88px';
 		document.getElementById('hover__zone1').style.width = '88px';
@@ -27,18 +24,24 @@ function mouselog(event) {
 		document.getElementById('text1_3').style.marginRight = '26px';
 		document.getElementById('text2_3').style.marginBottom = '12px';
 		document.getElementById('text2_3').style.marginRight = '33px';
-		if (event.getElementById == zone2.getElementById) {
+		if (id == 'zone2') {
 			document.getElementById('text1_2').style.writingMode = '';
 			document.getElementById('text1_2').style.transform = '';
-		}
-		else if (event.getElementById == zone4.getElementById) {
 			document.getElementById('text__info3').style.flexDirection = 'column-reverse';
 		}
-		else if (event.getElementById == zone3.getElementById) {
+		if (id == 'zone3') {
+			document.getElementById('text1_2').style.writingMode = 'vertical-rl';
+			document.getElementById('text1_2').style.transform = 'rotate(180deg)';
 			document.getElementById('text1_3').style.writingMode = '';
 			document.getElementById('text1_3').style.transform = '';
 			document.getElementById('text__info3').style.flexDirection = 'column';
-
+		}
+		if (id == 'zone4') {
+			document.getElementById('text1_2').style.writingMode = 'vertical-rl';
+			document.getElementById('text1_2').style.transform = 'rotate(180deg)';
+			document.getElementById('text1_3').style.writingMode = 'vertical-rl';
+			document.getElementById('text1_3').style.transform = 'rotate(180deg)';
+			document.getElementById('text__info3').style.flexDirection = 'column-reverse';
 		}
 	}
 	else if (event.type == 'mouseout') {
