@@ -201,6 +201,11 @@ img{
 .ActiveHoverZone1:hover .header__middle__blok2__infoblok__text1{
 	margin-bottom: 20px;
 	margin-left: 24px;
+	transform: rotate(0deg);
+
+
+
+
 }
 .ActiveHoverZone1:hover .header__middle__blok2__infoblok__HoverZone{
 	justify-content: flex-start;
@@ -310,6 +315,7 @@ img{
 	display: flex;
 	flex-direction: row;
 	display: table;
+	margin-left: -65px;
 }
 .ActiveHoverZone2:hover ~ .ActiveHoverZone3{
 	width: 88px;
@@ -393,6 +399,7 @@ img{
 	display: flex;
 	flex-direction: row;
 	display: table;
+	margin-left: -65px;
 }
 .ActiveHoverZone3:hover ~ .ActiveHoverZone4{
 	width: 88px;
@@ -453,6 +460,7 @@ img{
 	display: flex;
 	flex-direction: row;
 	display: table;
+	margin-left: -65px;
 }
 .ActiveHoverZone1, .ActiveHoverZone2, .ActiveHoverZone3, .ActiveHoverZone4{
 	width: 200px;
