@@ -161,7 +161,7 @@ img{
 .more{
 	display: flex;
 	margin-left: 360px;
-	display: none;
+	opacity: 0;
 	transition-duration: 0.5s;
 }
 .more__button{
@@ -186,31 +186,32 @@ img{
 	align-items: flex-end;
 	transition-duration: 0.5s;
 }
-#text__info1_2, #text__info2_2, #text__info3_2, #text__info4_2{
+#text__info1_2, #text__info2_2, #text__info2_2, #text__info3_2, #text__info4_2{
 	opacity: 0;
 	display: grid;
 	align-items: flex-start;
 }
-#Modified_text1{
+#Modified_text1_2_1, #Modified_text1_2_2, #Modified_text1_2_3, #Modified_text1_2_4{
 	margin-bottom: 20px;
 	margin-left: 24px;
 	transform: rotate(0deg);
 }
-#Modified_text2{
+#Modified_text2_2_1, #Modified_text2_2_2, #Modified_text2_2_3, #Modified_text2_2_4{
 	width: 340px;
 	margin-left: 25px;
 	writing-mode:horizontal-tb;
 	transform: rotate(0);
 }
-#Modified_text1_2{
-	margin-bottom: 20px;
-	margin-left: 24px;
+#text__info1_3, #text__info2_3, #text__info3_3, #text__info4_3{
+	opacity: 0;
+	flex-direction: column-reverse;
 }
-#Modified_text2_2{
-	width: 340px;
-	margin-left: 25px;
-	writing-mode:horizontal-tb;
-	transform: rotate(0);
+#Modified_text1_3_1, #Modified_text1_3_2, #Modified_text1_3_3, #Modified_text1_3_4{
+	writing-mode:vertical-rl;
+	transform: rotate(180deg);
+}
+#Modified_text2_3_1, #Modified_text2_3_2, #Modified_text2_3_3, #Modified_text2_3_4{
+	margin: 0 10px 12px 0;
 }
 /*1*/
 .ActiveHoverZone1:hover,.ActiveHoverZone2:hover,.ActiveHoverZone3:hover,.ActiveHoverZone4:hover{
@@ -223,42 +224,26 @@ img{
 	width: 536px;
 	background: linear-gradient(180deg, rgba(37, 40, 43, 0) -0.01%, rgba(37, 40, 43, 0.19) 25.4%, #1C1C1C 100%);
 }
-/*.ActiveHoverZone1:hover .header__middle__blok2__infoblok__text2{
-	width: 340px;
-	margin-left: 25px;
-	writing-mode:horizontal-tb;
-	transform: rotate(0);
-}*/
 .ActiveHoverZone1:hover #text__info1{
 	opacity: 0;
 }
 .ActiveHoverZone1:hover #text__info1_2{
 	opacity: 1;
 }
-/*.ActiveHoverZone1:hover .header__middle__blok2__infoblok__text1{
-	margin-bottom: 20px;
-	margin-left: 24px;
-	transform: rotate(0deg);
-}*/
 .ActiveHoverZone1:hover .header__middle__blok2__infoblok__HoverZone{
 	justify-content: flex-start;
 }
-.ActiveHoverZone1 .more{
-	/*display: flex;
-	flex-direction: row;*/
-	display: table;
+.ActiveHoverZone1:hover .more{
+	opacity: 1;
 }
 .ActiveHoverZone1:hover ~ .ActiveHoverZone2{
 	width: 88px;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone2 .text__info{
-	flex-direction: column-reverse;
+.ActiveHoverZone1:hover ~ .ActiveHoverZone2 #text__info2{
+	opacity: 0;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone2 .header__middle__blok2__infoblok__text2{
-	margin: 0 10px 12px 0;
-}
-.ActiveHoverZone1:hover ~ .ActiveHoverZone2 .header__middle__blok2__infoblok2{
-	width: 88px;
+.ActiveHoverZone1:hover ~ .ActiveHoverZone2 #text__info2_3{
+	opacity: 1;
 }
 .ActiveHoverZone1:hover ~ .ActiveHoverZone2 .contrast__blok{
 	width: 88px;
@@ -266,18 +251,14 @@ img{
 .ActiveHoverZone1:hover ~ .ActiveHoverZone2 .header__middle__blok2__infoblok__HoverZone{
 	width: 88px;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone2 .header__middle__blok2__infoblok__text1{
-	writing-mode:vertical-rl;
-	transform: rotate(180deg);
-}
 .ActiveHoverZone1:hover ~ .ActiveHoverZone3{
 	width: 88px;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone3 .text__info{
-	flex-direction: column-reverse;
+.ActiveHoverZone1:hover ~ .ActiveHoverZone3 #text__info3{
+	opacity: 0;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok__text2{
-	margin: 0 10px 12px 0;
+.ActiveHoverZone1:hover ~ .ActiveHoverZone3 #text__info3_3{
+	opacity: 1;
 }
 .ActiveHoverZone1:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok3{
 	width: 88px;
@@ -288,18 +269,14 @@ img{
 .ActiveHoverZone1:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok__HoverZone{
 	width: 88px;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok__text1{
-	writing-mode:vertical-rl;
-	transform: rotate(180deg);
-}
 .ActiveHoverZone1:hover ~ .ActiveHoverZone4{
 	width: 88px;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone4 .text__info{
-	flex-direction: column-reverse;
+.ActiveHoverZone1:hover ~ .ActiveHoverZone4 #text__info4{
+	opacity: 0;
 }
-.ActiveHoverZone1:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__text2{
-	margin: 0 10px 12px 0;
+.ActiveHoverZone1:hover ~ .ActiveHoverZone4 #text__info4_3{
+	opacity: 1;
 }
 .ActiveHoverZone1:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok4{
 	width: 88px;
@@ -309,13 +286,6 @@ img{
 }
 .ActiveHoverZone1:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__HoverZone{
 	width: 88px;
-	align-items: center;
-	flex-direction: column-reverse;
-	justify-content: flex-start;
-}
-.ActiveHoverZone1:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__text1{
-	writing-mode:vertical-rl;
-	transform: rotate(180deg);
 }
 
 /*2*/
@@ -327,43 +297,26 @@ img{
 	width: 536px;
 	background: linear-gradient(180deg, rgba(37, 40, 43, 0) -0.01%, rgba(37, 40, 43, 0.19) 25.4%, #1C1C1C 100%);
 }
-/*.ActiveHoverZone2:hover .header__middle__blok2__infoblok__text2{
-	width: 340px;
-	margin-left: 25px;
-	writing-mode:horizontal-tb;
-	transform: rotate(0);
-}
 .ActiveHoverZone2:hover #text__info2{
-	display: grid;
-	align-items: flex-start;
-}
-.ActiveHoverZone2:hover .header__middle__blok2__infoblok__text1{
-	margin-bottom: 20px;
-	margin-left: 24px;
-}*/
-.ActiveHoverZone2:hover #text__info1{
 	opacity: 0;
 }
-.ActiveHoverZone2:hover #text__info1_2{
+.ActiveHoverZone2:hover #text__info2_2{
 	opacity: 1;
 }
 .ActiveHoverZone2:hover .header__middle__blok2__infoblok__HoverZone{
 	justify-content: flex-start;
 }
 .ActiveHoverZone2:hover .more{
-	display: flex;
-	flex-direction: row;
-	display: table;
-	margin-left: -65px;
+	opacity: 1;
 }
 .ActiveHoverZone2:hover ~ .ActiveHoverZone3{
 	width: 88px;
 }
-.ActiveHoverZone2:hover ~ .ActiveHoverZone3 .text__info{
-	flex-direction: column-reverse;
+.ActiveHoverZone2:hover ~ .ActiveHoverZone3 #text__info3{
+	opacity: 0;
 }
-.ActiveHoverZone2:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok__text2{
-	margin: 0 10px 12px 0;
+.ActiveHoverZone2:hover ~ .ActiveHoverZone3 #text__info3_3{
+	opacity: 1;
 }
 .ActiveHoverZone2:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok3{
 	width: 88px;
@@ -371,23 +324,17 @@ img{
 .ActiveHoverZone2:hover ~ .ActiveHoverZone3 .contrast__blok{
 	width: 88px;
 }
-.ActiveHoverZone2:hover~ .ActiveHoverZone3 .header__middle__blok2__infoblok__HoverZone{
+.ActiveHoverZone2:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok__HoverZone{
 	width: 88px;
-}
-.ActiveHoverZone2:hover ~ .ActiveHoverZone3 .header__middle__blok2__infoblok__text1{
-	writing-mode:vertical-rl;
-	transform: rotate(180deg);
-	margin-top: 12px;
-	margin-right: -8px;
 }
 .ActiveHoverZone2:hover ~ .ActiveHoverZone4{
 	width: 88px;
 }
-.ActiveHoverZone2:hover ~ .ActiveHoverZone4 .text__info{
-	flex-direction: column-reverse;
+.ActiveHoverZone2:hover ~ .ActiveHoverZone4 #text__info4{
+	opacity: 0;
 }
-.ActiveHoverZone2:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__text2{
-	margin: 0 10px 12px 0;
+.ActiveHoverZone2:hover ~ .ActiveHoverZone4 #text__info4_3{
+	opacity: 1;
 }
 .ActiveHoverZone2:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok4{
 	width: 88px;
@@ -397,14 +344,6 @@ img{
 }
 .ActiveHoverZone2:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__HoverZone{
 	width: 88px;
-	align-items: center;
-	flex-direction: column-reverse;
-	justify-content: flex-start;
-}
-.ActiveHoverZone2:hover~ .ActiveHoverZone4 .header__middle__blok2__infoblok__text1{
-	writing-mode:vertical-rl;
-	transform: rotate(180deg);
-	margin-top: 12px;
 }
 
 
@@ -416,44 +355,26 @@ img{
 	width: 536px;
 	background: linear-gradient(180deg, rgba(37, 40, 43, 0) -0.01%, rgba(37, 40, 43, 0.19) 25.4%, #1C1C1C 100%);
 }
-/*.ActiveHoverZone3:hover .header__middle__blok2__infoblok__text2{
-	width: 340px;
-	margin: 20px 60px 0 24px;
-	margin-top: 20px;
-	margin-left: 24px;
-	writing-mode:horizontal-tb;
-	transform: rotate(0);
-}
-.ActiveHoverZone3:hover .text__info{
-	flex-direction: column;
-	align-items: flex-start;
-}
-.ActiveHoverZone3:hover .header__middle__blok2__infoblok__text1{
-	margin-left: 24px;
-}*/
-.ActiveHoverZone3:hover #text__info1{
+.ActiveHoverZone3:hover #text__info3{
 	opacity: 0;
 }
-.ActiveHoverZone3:hover #text__info1_2{
+.ActiveHoverZone3:hover #text__info3_2{
 	opacity: 1;
 }
 .ActiveHoverZone3:hover .header__middle__blok2__infoblok__HoverZone{
 	justify-content: flex-start;
 }
 .ActiveHoverZone3:hover .more{
-	display: flex;
-	flex-direction: row;
-	display: table;
-	margin-left: -65px;
+	opacity: 1;
 }
 .ActiveHoverZone3:hover ~ .ActiveHoverZone4{
 	width: 88px;
 }
-.ActiveHoverZone3:hover ~ .ActiveHoverZone4 .text__info{
-	flex-direction: column-reverse;
+.ActiveHoverZone3:hover ~ .ActiveHoverZone4 #text__info4{
+	opacity: 0;
 }
-.ActiveHoverZone3:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__text2{
-	margin: 0 10px 12px 0;
+.ActiveHoverZone3:hover ~ .ActiveHoverZone4 #text__info4_3{
+	opacity: 1;
 }
 .ActiveHoverZone3:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok4{
 	width: 88px;
@@ -463,13 +384,6 @@ img{
 }
 .ActiveHoverZone3:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__HoverZone{
 	width: 88px;
-	align-items: center;
-	flex-direction: column-reverse;
-	justify-content: flex-start;
-}
-.ActiveHoverZone3:hover ~ .ActiveHoverZone4 .header__middle__blok2__infoblok__text1{
-	writing-mode:vertical-rl;
-	transform: rotate(180deg);
 }
 
 
@@ -483,35 +397,17 @@ img{
 	width: 536px;
 	background: linear-gradient(180deg, rgba(37, 40, 43, 0) -0.01%, rgba(37, 40, 43, 0.19) 25.4%, #1C1C1C 100%);
 }
-/*.ActiveHoverZone4:hover .header__middle__blok2__infoblok__text2{
-	width: 340px;
-	margin: 20px 60px 0 24px;
-	margin-top: 20px;
-	margin-left: 24px;
-	writing-mode:horizontal-tb;
-	transform: rotate(0);
-}
-.ActiveHoverZone4:hover .text__info{
-	flex-direction: column;
-	align-items: flex-start;
-}
-.ActiveHoverZone4:hover .header__middle__blok2__infoblok__text1{
-	margin-left: 24px;
-}*/
-.ActiveHoverZone4:hover #text__info1{
+.ActiveHoverZone4:hover #text__info4{
 	opacity: 0;
 }
-.ActiveHoverZone4:hover #text__info1_2{
+.ActiveHoverZone4:hover #text__info4_2{
 	opacity: 1;
 }
 .ActiveHoverZone4:hover .header__middle__blok2__infoblok__HoverZone{
 	justify-content: flex-start;
 }
 .ActiveHoverZone4:hover .more{
-	display: flex;
-	flex-direction: row;
-	display: table;
-	margin-left: -65px;
+	opacity: 1;
 }
 .ActiveHoverZone1, .ActiveHoverZone2, .ActiveHoverZone3, .ActiveHoverZone4{
 	width: 200px;
